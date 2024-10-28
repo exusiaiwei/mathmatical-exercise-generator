@@ -47,13 +47,14 @@ Ensure you have the necessary permissions and settings for GitHub Actions in you
 
 ## 📁 Project Structure
 ```
-mathmatical-exercise-generator
+
 ├─.github               # Contains GitHub Actions configurations
-├─formatters            # Contains formatters for exercise output                  # Contains the output of the generated exercises
+├─formatters            # Contains formatters for exercise output
 ├─generators            # Logic for generating exercises
 ├─output                # Generated exercise files
 ├─templates             # Templates for generating exercises
 └─utils                 # Utility functions
+```
 
 ## 🤝 Contribution Guidelines
 Contributions are welcome! Please feel free to open issues or submit pull requests to enhance the functionality of this project. This is a student-driven initiative, and community involvement is highly encouraged.
