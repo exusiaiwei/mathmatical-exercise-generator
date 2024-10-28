@@ -41,9 +41,10 @@ jobs:
       env:
         NUM_PROBLEMS: ${{ github.event.inputs.num_problems || 10 }}
 
-    - name: Copy _extensions folder
-      run: cp -r templates/_extensions output/
-
+    - name: Copy _extensions folder and bibliography
+      run: |
+        cp -r templates/_extensions output/
+        cp templates/refs.bib output/
     - name: Render Quarto Document
       run: |
         cd output
