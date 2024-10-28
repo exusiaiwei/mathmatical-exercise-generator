@@ -1,4 +1,4 @@
-name: Generate Math Exercise
+name: Generate Math Exercise v1
 
 on:
   schedule:
