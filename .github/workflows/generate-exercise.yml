@@ -1,0 +1,58 @@
+# .github/workflows/generate-exercise.yml
+name: Generate Math Exercise
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Every Monday at 00:00 UTC
+  workflow_dispatch:      # Manual trigger
+    inputs:
+      num_problems:
+        description: 'Number of problems per section'
+        required: true
+        default: '10'
+        type: number
+
+jobs:
+  generate-exercise:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Full history for exercise counting
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install numpy
+
+    - name: Install Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        version: latest
+
+    - name: Generate exercise
+      run: |
+        python main.py
+      env:
+        NUM_PROBLEMS: ${{ github.event.inputs.num_problems || 10 }}
+
+    - name: Render Quarto Document
+      run: |
+        cd output
+        for f in *.qmd; do
+          quarto render "$f" --to ilm-typst
+        done
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add output/
+        git commit -m "Generate exercise $(date +'%Y-%m-%d')" || exit 0
+        git push
