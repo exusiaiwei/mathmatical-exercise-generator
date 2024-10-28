@@ -5,8 +5,6 @@ date: today
 abstract: |
   This is **exercise** ${exercise_number} for Foundations of Mathematical, WS24.
   Generated on ${date} with ${num_problems} problems per section.
-bibliography: refs.bib
-biblio-style: apa
 format:
   ilm-typst: default
 ---
@@ -24,8 +22,6 @@ Just enjoy it!
 
 The syntax of this document is Quarto syntax, which is a markdown-based language. It is designed to be human-readable and easy to write, while also being powerful enough to support complex document structures.
 
-You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing) @Foundations.
-
-The reference of this course is @KollerFoundations , @MA106 .
+You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
 
 ${content}
