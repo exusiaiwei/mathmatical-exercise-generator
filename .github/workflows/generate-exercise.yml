@@ -45,7 +45,7 @@ jobs:
       run: |
         cd output
         for f in *.qmd; do
-          quarto render "$f" --to pdf
+          quarto render "$f" --to typst
         done
 
     - name: Commit and push if there are changes
