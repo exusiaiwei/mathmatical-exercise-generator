@@ -26,4 +26,6 @@ The syntax of this document is Quarto syntax, which is a markdown-based language
 
 You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
 
+The reference of this course is @Foundations,@Koller--Foundations,@Maclagan--MA106.
+
 ${content}
