@@ -1,0 +1,200 @@
+---
+title: "Mathmatical Exercise"
+author: "Zichao Wei"
+date: "2024-10-25"
+abstract: "This is **exercise** for Foundations of Mathmatical, WS24."
+bibliography: refs.bib
+biblio-style: apa
+format:
+  ilm-typst: default
+---
+
+# Introduction
+
+::::: {.callout-important}
+# Practice makes perfect.
+We need many exercises to master the skill of mathmatical. However, it's not easy to find the exercise which just fit for you.
+
+So, I create this document to generate the exercise for you. You can use this document to generate the exercise for the Mathmatical course by GitHub Copilot or other LLM.
+:::
+
+
+This is an LLM-generated exercise document for the Mathmatical course.
+
+The syntax of this document is Quarto syntax, which is a markdown-based language. It is designed to be human-readable and easy to write, while also being powerful enough to support complex document structures.
+
+You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
+
+Some prompts for LLM or Copilot to generate exercises are as follows:
+
+- Use `$` to denote inline math, and `$$` to denote display math.
+- Generate different types of questions related to the current topic. Such as multiple-choice questions, fill-in-the-blank questions, and short answer questions.
+- Use random numbers to generate different questions.
+- Use the `answer` environment to provide the answer to the questions. The answer should be in comment of html so only visible in the source code.
+  - If the answer need to type in math, type the formula in advance and just let the user fill in the blank.
+- Use the `solution` environment to provide the solution to the questions.
+- Use the `hint` environment to provide hints to the questions.
+- Use the `exercise` environment to provide the questions.
+
+# Vectors and Matrices
+
+## Vector Arithmetic
+
+### Addition and Subtraction
+
+1. Let $\mathbf{u} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 4 \\ 5 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+<!--
+Answer: $\begin{bmatrix} 6 \\ 8 \end{bmatrix}$
+-->
+
+2. Let $\mathbf{u} = \begin{bmatrix} 4 \\ 2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 6\\ 2 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+<!--
+Answer: $\begin{bmatrix} 10 \\ 4 \end{bmatrix}$
+-->
+
+
+## Matrix Arithmetic
+
+1. Let $A = \begin{bmatrix} 2 & 3 \\ 4 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 6 & 7 \\ 8 & 9 \end{bmatrix}$. Compute $A + B$.
+
+<!--
+Answer: $\begin{bmatrix} 8 & 10 \\ 12 & 14 \end{bmatrix}$
+-->
+
+2. Let $A = \begin{bmatrix} 4 & 2 \\ 4 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 1 \\ 8 & 2 \end{bmatrix}$. Compute $A - B$.
+
+<!--
+Answer: $\begin{bmatrix} 2 & 1 \\ -4 & 3 \end{bmatrix}$
+-->
+
+3. Let $A = \begin{bmatrix} 2 & 3 \\ 4 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 6 & 7 \\ 8 & 9 \end{bmatrix}$. Compute $A \cdot B$.
+
+<!--
+Answer: $\begin{bmatrix} 36 & 41 \\ 64 & 73 \end{bmatrix}$
+-->
+
+4. Let $A = \begin{bmatrix} 2 & 5 \\ 2 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 1 \\ 4 & 2 \end{bmatrix}$. Compute $A \times B$.
+
+<!--
+Answer: $\begin{bmatrix} 18 & 9 \\ 18 & 9 \end{bmatrix}$
+-->
+
+5. Let $A = \begin{bmatrix} 2 & 3 \\ 4 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 6 & 7 \\ 8 & 9 \end{bmatrix}$. Compute $A \cdot B$.
+
+<!--
+Answer: $\begin{bmatrix} 36 & 41 \\ 64 & 73 \end{bmatrix}$
+-->
+
+## Gaussian Elimination
+
+1. Solve the following system of equations using Gaussian elimination:
+
+$$
+\begin{align*}
+2x + 3y &= 8 \\
+4x + 5y &= 18
+\end{align*}
+$$
+
+<!--
+Answer: $x = 2, y = 2$
+-->
+
+2. Solve the following system of equations using Gaussian elimination:
+
+$$
+\begin{align*}
+3x + 2y &= 11 \\
+5x + 3y &= 16
+\end{align*}
+$$
+
+<!--
+Answer: $x = 2, y = 3$
+-->
+
+3. Solve the following system of equations using Gaussian elimination:
+
+$$
+\begin{align*}
+2x + 3y + z &= 8 \\
+4x + 5y + z &= 18 \\
+x + 2y + z &= 7
+\end{align*}
+$$
+
+<!--
+Answer: $x = 1, y = 2, z = 3$
+-->
+
+4. Solve the following system of equations using Gaussian elimination:
+
+$$
+\begin{align*}
+2x + 3y + z &= 8 \\
+4x + 5y + z &= 18 \\
+3x + 4y + z &= 13
+\end{align*}
+$$
+
+<!--
+Answer: $x = 1, y = 2, z = 3$
+-->
+
+5. Solve the following system of equations using Gaussian elimination:
+
+$$
+\begin{align*}
+2x + 3y + z &= 8 \\
+4x + 5y + z &= 18 \\
+x + 2y + z &= 7
+\end{align*}
+$$
+
+<!--
+Answer: $x = 1, y = 2, z = 3$
+-->
+
+4. Choose the correct answer.
+
+$$
+\begin{align*}
+2x + 3y &= 8 \\
+4x + 5y &= 18
+\end{align*}
+$$
+
+a) $x = 2, y = 2$
+
+b) $x = 3, y = 2$
+
+c) $x = 2, y = 3$
+
+d) $x = 3, y = 3$
+
+<!--
+Answer: a) $x = 2, y = 2$
+-->
+
+5 Choose the kind of solution for the following system of equations.
+
+$$
+\begin{align*}
+2x + 3y &= 8 \\
+4x + 5y &= 18
+\end{align*}
+$$
+
+a) No solution
+
+b) Unique solution
+
+c) Infinite solutions
+
+d) None of the above
+
+<!--
+Answer: b) Unique solution
+-->
