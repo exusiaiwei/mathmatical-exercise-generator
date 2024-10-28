@@ -24,8 +24,8 @@ Just enjoy it!
 
 The syntax of this document is Quarto syntax, which is a markdown-based language. It is designed to be human-readable and easy to write, while also being powerful enough to support complex document structures.
 
-You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
+You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing) @Foundations.
 
-The reference of this course is @Foundations,@Koller--Foundations,@Maclagan--MA106.
+The reference of this course is @KollerFoundations , @MA106 .
 
 ${content}
