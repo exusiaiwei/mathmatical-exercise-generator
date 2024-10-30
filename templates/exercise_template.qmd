@@ -1,5 +1,8 @@
 ---
-title: "Mathematical Exercise"
+title: |
+  Exercise ${exercise_number}:
+
+  Foundations of Mathematical, WS24
 author: "Zichao Wei"
 date: today
 abstract: |
