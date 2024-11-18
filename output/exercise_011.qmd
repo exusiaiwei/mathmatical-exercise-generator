@@ -1,0 +1,210 @@
+---
+title: |
+  Exercise 11:
+
+  Foundations of Mathematical, WS24
+author: "Zichao Wei"
+date: today
+abstract: |
+  This is **exercise** 11 for Foundations of Mathematical, WS24.
+  Generated on 2024-11-18 with 10 problems per section.
+format:
+  ilm-typst: default
+---
+# Introduction
+
+::::: {.callout-important}
+# Practice makes perfect.
+We need many exercises to master the skill of mathmatical. However, it's not easy to find the exercise which just fit for you.
+
+So, I create this repo to generate the exercise for you.
+
+Just enjoy it!
+:::
+
+
+The syntax of this document is Quarto syntax, which is a markdown-based language. It is designed to be human-readable and easy to write, while also being powerful enough to support complex document structures.
+
+You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
+
+# Exercise
+
+## Vector Arithmetic
+
+### Addition
+
+1. Let $\mathbf{u} = \begin{bmatrix} 5 \\ 4 \\ 2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -8 \\ 3 \\ 4 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+2. Let $\mathbf{u} = \begin{bmatrix} 1 \\ 5 \\ -10 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 10 \\ 1 \\ 5 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+3. Let $\mathbf{u} = \begin{bmatrix} 7 \\ -9 \\ -2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -9 \\ -9 \\ -9 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+4. Let $\mathbf{u} = \begin{bmatrix} 10 \\ 5 \\ 2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -4 \\ 10 \\ 6 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+5. Let $\mathbf{u} = \begin{bmatrix} 9 \\ -4 \\ 0 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -9 \\ 1 \\ 5 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+6. Let $\mathbf{u} = \begin{bmatrix} -4 \\ 9 \\ 2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 6 \\ 4 \\ 9 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+7. Let $\mathbf{u} = \begin{bmatrix} -7 \\ 3 \\ 4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -3 \\ 8 \\ 6 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+8. Let $\mathbf{u} = \begin{bmatrix} -6 \\ -4 \\ 9 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -4 \\ 0 \\ 0 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+9. Let $\mathbf{u} = \begin{bmatrix} -6 \\ -1 \\ -4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 3 \\ 10 \\ -8 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+10. Let $\mathbf{u} = \begin{bmatrix} 1 \\ 4 \\ -5 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -6 \\ -9 \\ 1 \end{bmatrix}$. Compute $\mathbf{u} + \mathbf{v}$.
+
+### Subtraction
+
+1. Let $\mathbf{u} = \begin{bmatrix} -6 \\ -4 \\ -4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 3 \\ 8 \\ -6 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+2. Let $\mathbf{u} = \begin{bmatrix} 8 \\ -9 \\ 2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 3 \\ 2 \\ -7 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+3. Let $\mathbf{u} = \begin{bmatrix} -5 \\ 3 \\ 6 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 3 \\ -4 \\ 3 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+4. Let $\mathbf{u} = \begin{bmatrix} -9 \\ -8 \\ -2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 4 \\ 3 \\ -2 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+5. Let $\mathbf{u} = \begin{bmatrix} -10 \\ -1 \\ 5 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -10 \\ -2 \\ 0 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+6. Let $\mathbf{u} = \begin{bmatrix} 7 \\ 1 \\ -7 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 0 \\ 10 \\ -8 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+7. Let $\mathbf{u} = \begin{bmatrix} 6 \\ 2 \\ 8 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -10 \\ -7 \\ 3 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+8. Let $\mathbf{u} = \begin{bmatrix} -7 \\ -5 \\ 9 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 4 \\ -8 \\ 5 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+9. Let $\mathbf{u} = \begin{bmatrix} 1 \\ 10 \\ 9 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -1 \\ -5 \\ 8 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+10. Let $\mathbf{u} = \begin{bmatrix} 0 \\ -1 \\ -10 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 6 \\ -4 \\ 0 \end{bmatrix}$. Compute $\mathbf{u} - \mathbf{v}$.
+
+### Scalar Multiplication
+
+1. Let $\mathbf{u} = \begin{bmatrix} 4 \\ 9 \\ -7 \end{bmatrix}$. Compute $-10\mathbf{v}$.
+
+2. Let $\mathbf{u} = \begin{bmatrix} 2 \\ 3 \\ 2 \end{bmatrix}$. Compute $3\mathbf{v}$.
+
+3. Let $\mathbf{u} = \begin{bmatrix} 10 \\ 7 \\ 3 \end{bmatrix}$. Compute $1\mathbf{v}$.
+
+4. Let $\mathbf{u} = \begin{bmatrix} -4 \\ 1 \\ 1 \end{bmatrix}$. Compute $-3\mathbf{v}$.
+
+5. Let $\mathbf{u} = \begin{bmatrix} 0 \\ -2 \\ 4 \end{bmatrix}$. Compute $-7\mathbf{v}$.
+
+6. Let $\mathbf{u} = \begin{bmatrix} -4 \\ -8 \\ -6 \end{bmatrix}$. Compute $-10\mathbf{v}$.
+
+7. Let $\mathbf{u} = \begin{bmatrix} 4 \\ -6 \\ 1 \end{bmatrix}$. Compute $4\mathbf{v}$.
+
+8. Let $\mathbf{u} = \begin{bmatrix} -6 \\ 7 \\ -8 \end{bmatrix}$. Compute $-3\mathbf{v}$.
+
+9. Let $\mathbf{u} = \begin{bmatrix} 8 \\ 7 \\ 10 \end{bmatrix}$. Compute $-3\mathbf{v}$.
+
+10. Let $\mathbf{u} = \begin{bmatrix} 6 \\ 0 \\ -7 \end{bmatrix}$. Compute $4\mathbf{v}$.
+
+## Matrix Arithmetic
+
+### Addition
+
+1. Let $A = \begin{bmatrix} 3 & 7 & -4 \\ 9 & 3 & 2 \\ -10 & 5 & 9 \end{bmatrix}$ and $B = \begin{bmatrix} -10 & -8 & -10 \\ 0 & -2 & -9 \\ 6 & -1 & 6 \end{bmatrix}$. Compute $A + B$.
+
+2. Let $A = \begin{bmatrix} -6 & -9 & 2 \\ -4 & 6 & 4 \\ -9 & -8 & -4 \end{bmatrix}$ and $B = \begin{bmatrix} 5 & 6 & -5 \\ -1 & -6 & 4 \\ -1 & 4 & 7 \end{bmatrix}$. Compute $A + B$.
+
+3. Let $A = \begin{bmatrix} -9 & -6 & -10 \\ -9 & -5 & -7 \\ 1 & 9 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 3 & -7 & -5 \\ -3 & -7 & -5 \\ -4 & 4 & -5 \end{bmatrix}$. Compute $A + B$.
+
+4. Let $A = \begin{bmatrix} -3 & 1 & -5 \\ -7 & 4 & 9 \\ -1 & 9 & -8 \end{bmatrix}$ and $B = \begin{bmatrix} 1 & 0 & 6 \\ 7 & -2 & 1 \\ 4 & 9 & -1 \end{bmatrix}$. Compute $A + B$.
+
+5. Let $A = \begin{bmatrix} -1 & 8 & -1 \\ 1 & -5 & 7 \\ 6 & 7 & -1 \end{bmatrix}$ and $B = \begin{bmatrix} -9 & 2 & -10 \\ 7 & -10 & 8 \\ 5 & -8 & 6 \end{bmatrix}$. Compute $A + B$.
+
+6. Let $A = \begin{bmatrix} 2 & 0 & 4 \\ -5 & -5 & 0 \\ -8 & 8 & 7 \end{bmatrix}$ and $B = \begin{bmatrix} -2 & 7 & 8 \\ 0 & 6 & 4 \\ -10 & -9 & -10 \end{bmatrix}$. Compute $A + B$.
+
+7. Let $A = \begin{bmatrix} -2 & 0 & 2 \\ 6 & -7 & -9 \\ -9 & -9 & 1 \end{bmatrix}$ and $B = \begin{bmatrix} -10 & 0 & 5 \\ 3 & 6 & 1 \\ -1 & 8 & 9 \end{bmatrix}$. Compute $A + B$.
+
+8. Let $A = \begin{bmatrix} -7 & 3 & -5 \\ -2 & 5 & -1 \\ -10 & -5 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} -4 & 8 & -2 \\ 7 & 8 & 0 \\ -5 & -4 & -1 \end{bmatrix}$. Compute $A + B$.
+
+9. Let $A = \begin{bmatrix} 3 & 1 & -8 \\ -10 & -7 & 2 \\ -2 & -3 & 0 \end{bmatrix}$ and $B = \begin{bmatrix} 0 & -10 & 8 \\ 5 & 0 & -1 \\ -8 & 1 & 5 \end{bmatrix}$. Compute $A + B$.
+
+10. Let $A = \begin{bmatrix} 7 & 7 & -7 \\ 8 & -7 & -1 \\ -9 & 1 & -6 \end{bmatrix}$ and $B = \begin{bmatrix} -3 & -6 & 9 \\ -10 & -2 & -4 \\ 1 & -6 & 9 \end{bmatrix}$. Compute $A + B$.
+
+### Subtraction
+
+1. Let $A = \begin{bmatrix} -1 & 3 & -5 \\ -10 & 2 & -1 \\ -7 & 8 & -10 \end{bmatrix}$ and $B = \begin{bmatrix} -2 & -3 & -4 \\ 1 & -5 & 6 \\ -10 & -8 & -5 \end{bmatrix}$. Compute $A - B$.
+
+2. Let $A = \begin{bmatrix} -8 & -8 & 4 \\ 4 & -7 & 9 \\ 9 & -3 & -4 \end{bmatrix}$ and $B = \begin{bmatrix} 1 & -4 & -3 \\ -1 & -7 & -10 \\ 0 & -7 & -3 \end{bmatrix}$. Compute $A - B$.
+
+3. Let $A = \begin{bmatrix} -5 & -1 & -7 \\ 6 & -6 & -9 \\ -4 & -3 & 8 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 7 & -2 \\ 9 & -6 & -6 \\ -2 & -5 & -2 \end{bmatrix}$. Compute $A - B$.
+
+4. Let $A = \begin{bmatrix} 7 & 5 & 5 \\ 5 & 3 & -7 \\ 9 & 0 & 6 \end{bmatrix}$ and $B = \begin{bmatrix} -10 & 4 & -1 \\ -1 & -2 & 3 \\ 5 & 4 & 9 \end{bmatrix}$. Compute $A - B$.
+
+5. Let $A = \begin{bmatrix} 1 & -2 & -2 \\ 9 & -8 & -1 \\ 9 & -1 & -9 \end{bmatrix}$ and $B = \begin{bmatrix} -7 & -4 & 6 \\ 6 & -9 & -1 \\ 4 & 1 & 8 \end{bmatrix}$. Compute $A - B$.
+
+6. Let $A = \begin{bmatrix} -3 & 7 & 2 \\ 1 & 8 & -8 \\ 0 & -6 & -6 \end{bmatrix}$ and $B = \begin{bmatrix} -5 & -1 & -5 \\ -4 & 5 & -5 \\ -5 & -2 & -10 \end{bmatrix}$. Compute $A - B$.
+
+7. Let $A = \begin{bmatrix} -9 & -9 & -6 \\ -5 & 8 & -2 \\ 9 & 1 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} -3 & 4 & 4 \\ 6 & -8 & -6 \\ 0 & -7 & 7 \end{bmatrix}$. Compute $A - B$.
+
+8. Let $A = \begin{bmatrix} -6 & -4 & 9 \\ -7 & -9 & -4 \\ -5 & -7 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} 7 & 9 & -3 \\ 4 & 8 & -10 \\ 3 & 1 & -5 \end{bmatrix}$. Compute $A - B$.
+
+9. Let $A = \begin{bmatrix} -4 & 1 & -1 \\ 1 & 7 & 0 \\ 6 & 1 & -4 \end{bmatrix}$ and $B = \begin{bmatrix} 0 & -1 & -2 \\ 1 & -3 & 8 \\ -8 & -7 & 6 \end{bmatrix}$. Compute $A - B$.
+
+10. Let $A = \begin{bmatrix} 7 & 1 & 6 \\ 3 & -7 & -8 \\ -5 & 7 & -8 \end{bmatrix}$ and $B = \begin{bmatrix} -9 & 9 & 4 \\ 6 & -9 & 5 \\ 6 & 9 & -7 \end{bmatrix}$. Compute $A - B$.
+
+### Multiplication
+
+1. Let $A = \begin{bmatrix} -6 & -7 & 7 \\ 1 & -7 & -7 \\ -9 & 7 & -6 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & -10 & 1 \\ 4 & -9 & -2 \\ -1 & 4 & 8 \end{bmatrix}$. Compute $A \cdot B$.
+
+2. Let $A = \begin{bmatrix} 4 & -6 & 8 \\ 1 & -10 & -6 \\ 0 & 1 & -4 \end{bmatrix}$ and $B = \begin{bmatrix} -10 & 0 & 4 \\ -4 & 1 & -7 \\ -1 & -5 & -2 \end{bmatrix}$. Compute $A \cdot B$.
+
+3. Let $A = \begin{bmatrix} -7 & 0 & 7 \\ -1 & 0 & -3 \\ -7 & 0 & 3 \end{bmatrix}$ and $B = \begin{bmatrix} -4 & -3 & 9 \\ -10 & 9 & -2 \\ 3 & 3 & -6 \end{bmatrix}$. Compute $A \cdot B$.
+
+4. Let $A = \begin{bmatrix} -4 & 7 & 1 \\ 9 & 6 & 8 \\ 7 & -10 & 0 \end{bmatrix}$ and $B = \begin{bmatrix} -6 & -7 & -5 \\ -8 & 5 & 0 \\ 3 & 2 & -2 \end{bmatrix}$. Compute $A \cdot B$.
+
+5. Let $A = \begin{bmatrix} 0 & -10 & -7 \\ -9 & -6 & -6 \\ -7 & -3 & -2 \end{bmatrix}$ and $B = \begin{bmatrix} -10 & 8 & 7 \\ -3 & -3 & 2 \\ 5 & 6 & -8 \end{bmatrix}$. Compute $A \cdot B$.
+
+6. Let $A = \begin{bmatrix} 5 & 0 & 9 \\ 5 & 6 & 1 \\ 0 & 3 & 3 \end{bmatrix}$ and $B = \begin{bmatrix} -2 & 4 & 2 \\ 4 & -7 & 7 \\ -4 & -5 & 4 \end{bmatrix}$. Compute $A \cdot B$.
+
+7. Let $A = \begin{bmatrix} 4 & 9 & 0 \\ -2 & -2 & 5 \\ -8 & 9 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 7 & -2 \\ 8 & -3 & 6 \\ 9 & -1 & 2 \end{bmatrix}$. Compute $A \cdot B$.
+
+8. Let $A = \begin{bmatrix} 5 & -5 & -8 \\ -4 & -5 & -5 \\ 5 & -7 & 4 \end{bmatrix}$ and $B = \begin{bmatrix} -3 & 5 & -6 \\ 3 & 5 & 8 \\ -3 & 3 & 9 \end{bmatrix}$. Compute $A \cdot B$.
+
+9. Let $A = \begin{bmatrix} -9 & -6 & -6 \\ -1 & -2 & 8 \\ 9 & 5 & -5 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 8 & 8 \\ 7 & 1 & -1 \\ 0 & 8 & 5 \end{bmatrix}$. Compute $A \cdot B$.
+
+10. Let $A = \begin{bmatrix} 1 & -7 & -8 \\ -5 & 6 & -2 \\ 6 & -6 & 8 \end{bmatrix}$ and $B = \begin{bmatrix} -5 & -4 & 0 \\ -2 & -2 & -5 \\ 6 & 5 & 7 \end{bmatrix}$. Compute $A \cdot B$.
+
+
+# Answer
+
+## Vector Arithmetic
+
+### Addition
+
+1: $\begin{bmatrix} -3 \\ 7 \\ 6 \end{bmatrix}$ 2: $\begin{bmatrix} 11 \\ 6 \\ -5 \end{bmatrix}$ 3: $\begin{bmatrix} -2 \\ -18 \\ -11 \end{bmatrix}$ 4: $\begin{bmatrix} 6 \\ 15 \\ 8 \end{bmatrix}$ 5: $\begin{bmatrix} 0 \\ -3 \\ 5 \end{bmatrix}$
+
+6: $\begin{bmatrix} 2 \\ 13 \\ 11 \end{bmatrix}$ 7: $\begin{bmatrix} -10 \\ 11 \\ 10 \end{bmatrix}$ 8: $\begin{bmatrix} -10 \\ -4 \\ 9 \end{bmatrix}$ 9: $\begin{bmatrix} -3 \\ 9 \\ -12 \end{bmatrix}$ 10: $\begin{bmatrix} -5 \\ -5 \\ -4 \end{bmatrix}$
+
+### Subtraction
+
+1: $\begin{bmatrix} -9 \\ -12 \\ 2 \end{bmatrix}$ 2: $\begin{bmatrix} 5 \\ -11 \\ 9 \end{bmatrix}$ 3: $\begin{bmatrix} -8 \\ 7 \\ 3 \end{bmatrix}$ 4: $\begin{bmatrix} -13 \\ -11 \\ 0 \end{bmatrix}$ 5: $\begin{bmatrix} 0 \\ 1 \\ 5 \end{bmatrix}$
+
+6: $\begin{bmatrix} 7 \\ -9 \\ 1 \end{bmatrix}$ 7: $\begin{bmatrix} 16 \\ 9 \\ 5 \end{bmatrix}$ 8: $\begin{bmatrix} -11 \\ 3 \\ 4 \end{bmatrix}$ 9: $\begin{bmatrix} 2 \\ 15 \\ 1 \end{bmatrix}$ 10: $\begin{bmatrix} -6 \\ 3 \\ -10 \end{bmatrix}$
+
+### Scalar Multiplication
+
+1: $\begin{bmatrix} -40 \\ -90 \\ 70 \end{bmatrix}$ 2: $\begin{bmatrix} 6 \\ 9 \\ 6 \end{bmatrix}$ 3: $\begin{bmatrix} 10 \\ 7 \\ 3 \end{bmatrix}$ 4: $\begin{bmatrix} 12 \\ -3 \\ -3 \end{bmatrix}$ 5: $\begin{bmatrix} 0 \\ 14 \\ -28 \end{bmatrix}$
+
+6: $\begin{bmatrix} 40 \\ 80 \\ 60 \end{bmatrix}$ 7: $\begin{bmatrix} 16 \\ -24 \\ 4 \end{bmatrix}$ 8: $\begin{bmatrix} 18 \\ -21 \\ 24 \end{bmatrix}$ 9: $\begin{bmatrix} -24 \\ -21 \\ -30 \end{bmatrix}$ 10: $\begin{bmatrix} 24 \\ 0 \\ -28 \end{bmatrix}$
+
+## Matrix Arithmetic
+
+### Addition
+
+1: $\begin{bmatrix} -7 & -1 & -14 \\ 9 & 1 & -7 \\ -4 & 4 & 15 \end{bmatrix}$ 2: $\begin{bmatrix} -1 & -3 & -3 \\ -5 & 0 & 8 \\ -10 & -4 & 3 \end{bmatrix}$ 3: $\begin{bmatrix} -6 & -13 & -15 \\ -12 & -12 & -12 \\ -3 & 13 & 0 \end{bmatrix}$ 4: $\begin{bmatrix} -2 & 1 & 1 \\ 0 & 2 & 10 \\ 3 & 18 & -9 \end{bmatrix}$ 5: $\begin{bmatrix} -10 & 10 & -11 \\ 8 & -15 & 15 \\ 11 & -1 & 5 \end{bmatrix}$
+
+6: $\begin{bmatrix} 0 & 7 & 12 \\ -5 & 1 & 4 \\ -18 & -1 & -3 \end{bmatrix}$ 7: $\begin{bmatrix} -12 & 0 & 7 \\ 9 & -1 & -8 \\ -10 & -1 & 10 \end{bmatrix}$ 8: $\begin{bmatrix} -11 & 11 & -7 \\ 5 & 13 & -1 \\ -15 & -9 & 4 \end{bmatrix}$ 9: $\begin{bmatrix} 3 & -9 & 0 \\ -5 & -7 & 1 \\ -10 & -2 & 5 \end{bmatrix}$ 10: $\begin{bmatrix} 4 & 1 & 2 \\ -2 & -9 & -5 \\ -8 & -5 & 3 \end{bmatrix}$
+
+### Subtraction
+
+1: $\begin{bmatrix} 1 & 6 & -1 \\ -11 & 7 & -7 \\ 3 & 16 & -5 \end{bmatrix}$ 2: $\begin{bmatrix} -9 & -4 & 7 \\ 5 & 0 & 19 \\ 9 & 4 & -1 \end{bmatrix}$ 3: $\begin{bmatrix} -9 & -8 & -5 \\ -3 & 0 & -3 \\ -2 & 2 & 10 \end{bmatrix}$ 4: $\begin{bmatrix} 17 & 1 & 6 \\ 6 & 5 & -10 \\ 4 & -4 & -3 \end{bmatrix}$ 5: $\begin{bmatrix} 8 & 2 & -8 \\ 3 & 1 & 0 \\ 5 & -2 & -17 \end{bmatrix}$
+
+6: $\begin{bmatrix} 2 & 8 & 7 \\ 5 & 3 & -3 \\ 5 & -4 & 4 \end{bmatrix}$ 7: $\begin{bmatrix} -6 & -13 & -10 \\ -11 & 16 & 4 \\ 9 & 8 & -5 \end{bmatrix}$ 8: $\begin{bmatrix} -13 & -13 & 12 \\ -11 & -17 & 6 \\ -8 & -8 & 10 \end{bmatrix}$ 9: $\begin{bmatrix} -4 & 2 & 1 \\ 0 & 10 & -8 \\ 14 & 8 & -10 \end{bmatrix}$ 10: $\begin{bmatrix} 16 & -8 & 2 \\ -3 & 2 & -13 \\ -11 & -2 & -1 \end{bmatrix}$
+
+### Multiplication
+
+1: $\begin{bmatrix} -59 & 151 & 64 \\ -17 & 25 & -41 \\ -2 & 3 & -71 \end{bmatrix}$ 2: $\begin{bmatrix} -24 & -46 & 42 \\ 36 & 20 & 86 \\ 0 & 21 & 1 \end{bmatrix}$ 3: $\begin{bmatrix} 49 & 42 & -105 \\ -5 & -6 & 9 \\ 37 & 30 & -81 \end{bmatrix}$ 4: $\begin{bmatrix} -29 & 65 & 18 \\ -78 & -17 & -61 \\ 38 & -99 & -35 \end{bmatrix}$ 5: $\begin{bmatrix} -5 & -12 & 36 \\ 78 & -90 & -27 \\ 69 & -59 & -39 \end{bmatrix}$
+
+6: $\begin{bmatrix} -46 & -25 & 46 \\ 10 & -27 & 56 \\ 0 & -36 & 33 \end{bmatrix}$ 7: $\begin{bmatrix} 88 & 1 & 46 \\ 21 & -13 & 2 \\ 58 & -85 & 74 \end{bmatrix}$ 8: $\begin{bmatrix} -6 & -24 & -142 \\ 12 & -60 & -61 \\ -48 & 2 & -50 \end{bmatrix}$ 9: $\begin{bmatrix} -60 & -126 & -96 \\ -16 & 54 & 34 \\ 53 & 37 & 42 \end{bmatrix}$ 10: $\begin{bmatrix} -39 & -30 & -21 \\ 1 & -2 & -44 \\ 30 & 28 & 86 \end{bmatrix}$
+
