@@ -11,20 +11,5 @@ abstract: |
 format:
   ilm-typst: default
 ---
-# Introduction
-
-::::: {.callout-important}
-# Practice makes perfect.
-We need many exercises to master the skill of mathmatical. However, it's not easy to find the exercise which just fit for you.
-
-So, I create this repo to generate the exercise for you.
-
-Just enjoy it!
-:::
-
-
-The syntax of this document is Quarto syntax, which is a markdown-based language. It is designed to be human-readable and easy to write, while also being powerful enough to support complex document structures.
-
-You can check the syllabus of this course in the following link: [Syllabus](https://docs.google.com/document/d/1M8a0vVYzss5CYGzF5YOpvOzvnheH11EEnokeyusT3UA/edit?usp=sharing).
 
 ${content}

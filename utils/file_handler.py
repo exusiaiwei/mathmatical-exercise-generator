@@ -2,6 +2,7 @@ import os
 import shutil
 from datetime import datetime
 from string import Template
+from formatters.file_formatter import save_problems_by_type
 
 class ExerciseFileHandler:
     def __init__(self, template_dir="templates", output_dir="output"):
@@ -10,40 +11,47 @@ class ExerciseFileHandler:
         self.exercise_count = self._get_exercise_count()
 
     def _get_exercise_count(self):
-        """Get current exercise count from outputs"""
+        """Get next exercise number by finding the max current number"""
         if not os.path.exists(self.output_dir):
             return 1
-        exercises = [f for f in os.listdir(self.output_dir) if f.startswith("exercise_")]
-        return len(exercises) + 1
 
-    def prepare_exercise_file(self, problems_content, num_problems):
-        """Prepare exercise file from template"""
-        # Create output directory if not exists
+        exercises = [f for f in os.listdir(self.output_dir) if f.startswith("exercise_")]
+        if not exercises:
+            return 1
+
+        # Extract numbers from filenames and find max
+        numbers = []
+        for exercise in exercises:
+            try:
+                # 从 'exercise_001.qmd' 提取数字部分
+                num = int(exercise.split('_')[1].split('.')[0])
+                numbers.append(num)
+            except (IndexError, ValueError):
+                continue
+
+        return max(numbers) + 1 if numbers else 1
+
+    def prepare_exercise_file(self, problems_by_type, answers_by_type, num_problems):
         os.makedirs(self.output_dir, exist_ok=True)
 
-        # Copy template files
         template_qmd = os.path.join(self.template_dir, "exercise_template.qmd")
-        template_bib = os.path.join(self.template_dir, "refs.bib")
-
         output_name = f"exercise_{self.exercise_count:03d}"
         output_qmd = os.path.join(self.output_dir, f"{output_name}.qmd")
-        output_bib = os.path.join(self.output_dir, "refs.bib")
 
-        shutil.copy2(template_bib, output_bib)
+        # 使用 file_formatter 中的函数生成内容
+        content = save_problems_by_type(problems_by_type, answers_by_type)
 
-        # Read and fill template
-        with open(template_qmd, 'r') as f:
+        with open(template_qmd, 'r', encoding='utf-8') as f:
             template = Template(f.read())
 
-        content = template.substitute(
+        final_content = template.substitute(
             exercise_number=self.exercise_count,
             date=datetime.now().strftime("%Y-%m-%d"),
             num_problems=num_problems,
-            content=problems_content
+            content=content
         )
 
-        # Write output file
-        with open(output_qmd, 'w') as f:
-            f.write(content)
+        with open(output_qmd, 'w', encoding='utf-8') as f:
+            f.write(final_content)
 
         return output_name
