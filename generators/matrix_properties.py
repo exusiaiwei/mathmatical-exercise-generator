@@ -1,6 +1,8 @@
 import numpy as np
 from fractions import Fraction
 
+import formatters.latex_formatter
+
 class MatrixProperties:
     @staticmethod
     def generate_from_rref(size):
@@ -123,7 +125,7 @@ class MatrixProperties:
                         reduction_steps.append(record_step(current,
                             f"Subtract {factor} times row {i+1} from row {j+1}"))
 
-        return {
+        problem_str, answer_str = formatters.latex_formatter.format_matrix_properties_problem({
             'original': original,
             'rref': rref,
             'rank': matrix_rank,
@@ -131,8 +133,9 @@ class MatrixProperties:
             'determinant': det,
             'inverse': inverse,
             'kernel': kernel,
-            'augmented_steps': reduction_steps  # 添加消元步骤
-        }
+            'augmented_steps': reduction_steps
+        }, 1)
+        return problem_str, answer_str
 
 class RREFGenerator:
     @staticmethod

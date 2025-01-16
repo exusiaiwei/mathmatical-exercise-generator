@@ -1,0 +1,25 @@
+---
+title: |
+  Calculus Exercise ${exercise_number}:
+
+  Foundations of Mathematical, WS24
+author: "Zichao Wei"
+date: today
+abstract: |
+  This is calculus exercise ${exercise_number} for Foundations of Mathematical, WS24.
+  Generated on ${date} with ${num_problems} problems per section.
+format:
+  ilm-typst: default
+---
+
+# Limits
+${limit_problems}
+
+# Derivatives
+${derivative_problems}
+
+# Integrals
+${integral_problems}
+
+# Partial Derivatives
+${partial_derivative_problems}

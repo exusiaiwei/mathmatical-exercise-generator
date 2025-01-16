@@ -22,6 +22,12 @@ def save_problems_by_type(problems_by_type, answers_by_type):
                         "d) $A^{-1}$ (if exists)\n\n" +
                         "e) basis of ker($A$)",
             "RREF": "Find the Reduced Row Echelon Form of the following matrix $A$"
+        },
+        "Calculus": {
+            "Limit": "Calculate the following limits",
+            "Derivative": "Calculate the derivatives of the following expressions",
+            "Integral": "Calculate the indefinite and definite integrals of the following expressions",
+            "Partial Derivative": "Calculate the partial derivatives of the following expressions"
         }
     }
 
@@ -37,23 +43,29 @@ def save_problems_by_type(problems_by_type, answers_by_type):
                     content.append(f"### {op}\n{desc}\n")
                     for i, problem in enumerate(problems[op], 1):
                         # 简化问题描述，只保留数学定义
-                        simplified = (problem.replace("Let ", "")
-                                          .replace(". Compute", "")
-                                          .replace("Find", "")
-                                          .strip())
-                        content.append(f"{i}. {simplified}\n")
+                        if isinstance(problem, str):
+                            simplified = (problem.replace("Let ", "")
+                                              .replace(". Compute", "")
+                                              .replace("Find", "")
+                                              .strip())
+                            content.append(f"{i}. {simplified}\n")
+                        elif isinstance(problem, dict) and "problem" in problem:
+                            content.append(f"{i}. {problem['problem']}\n")
 
     # 生成解答部分
     content.append("\n# Solutions\n")
 
     for section, answers in answers_by_type.items():
-        content.append(f"## {section}")
+        content.append(f"## {section}\n")
         for operation, answer_list in answers.items():
-            content.append(f"### {operation}")
+            content.append(f"### {operation}\n")
             # 每5个答案一行
-            for i in range(0, len(answer_list), 5):
-                content.append(' '.join(answer_list[i:i+5]))
-                content.append("")  # 添加空行
+            if isinstance(answer_list, list):
+                for i in range(0, len(answer_list), 5):
+                    content.append(' '.join(answer_list[i:i+5]))
+                    content.append("")  # 添加空行
+            elif isinstance(answer_list, dict):
+                content.append(f"{answer_list['answer']}\n")
 
     # 写入文件
     return '\n'.join(content)

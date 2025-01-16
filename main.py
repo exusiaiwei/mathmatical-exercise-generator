@@ -13,12 +13,8 @@ from generators.matrix_operations import (
     generate_matrix_multiplication
 )
 from generators.matrix_properties import RREFGenerator, MatrixProperties
-from formatters.latex_formatter import (
-    format_vector_problem_answer,
-    format_matrix_problem_answer,
-    format_matrix_properties_problem,
-    format_rref_problem
-)
+from formatters.latex_formatter import format_rref_problem
+from generators.calculus_exercises import CalculusExercises
 
 def main():
     problems_by_type = {
@@ -34,7 +30,13 @@ def main():
         },
         "Matrix Properties": {
             "Properties": [],
-            "RREF" : []
+            "RREF": []
+        },
+        "Calculus": {
+            "Limit": [],
+            "Derivative": [],
+            "Integral": [],
+            "Partial Derivative": []
         }
     }
 
@@ -51,7 +53,13 @@ def main():
         },
         "Matrix Properties": {
             "Properties": [],
-            "RREF" : []
+            "RREF": []
+        },
+        "Calculus": {
+            "Limit": [],
+            "Derivative": [],
+            "Integral": [],
+            "Partial Derivative": []
         }
     }
 
@@ -59,14 +67,12 @@ def main():
     for i in range(Config.NUM_PROBLEMS):
         # Vector arithmetic problems
         # Addition
-        a, b, c = generate_vector_addition(Config.PROBLEM_LENGTH)
-        problem, answer = format_vector_problem_answer((a, b), c, '+', i+1)
+        problem, answer = generate_vector_addition(Config.PROBLEM_LENGTH)
         problems_by_type["Vector Arithmetic"]["Addition"].append(problem)
         answers_by_type["Vector Arithmetic"]["Addition"].append(answer)
 
         # Subtraction
-        a, b, c = generate_vector_subtraction(Config.PROBLEM_LENGTH)
-        problem, answer = format_vector_problem_answer((a, b), c, '-', i+1)
+        problem, answer = generate_vector_subtraction(Config.PROBLEM_LENGTH)
         problems_by_type["Vector Arithmetic"]["Subtraction"].append(problem)
         answers_by_type["Vector Arithmetic"]["Subtraction"].append(answer)
 
@@ -80,25 +86,42 @@ def main():
 
         # Matrix arithmetic problems
         # Addition
-        A, B, C = generate_matrix_addition(Config.PROBLEM_LENGTH)
-        problem, answer = format_matrix_problem_answer(A, B, C, '+', i+1)
+        problem, answer = generate_matrix_addition(Config.PROBLEM_LENGTH)
         problems_by_type["Matrix Arithmetic"]["Addition"].append(problem)
         answers_by_type["Matrix Arithmetic"]["Addition"].append(answer)
 
         # Subtraction
-        A, B, C = generate_matrix_subtraction(Config.PROBLEM_LENGTH)
-        problem, answer = format_matrix_problem_answer(A, B, C, '-', i+1)
+        problem, answer = generate_matrix_subtraction(Config.PROBLEM_LENGTH)
         problems_by_type["Matrix Arithmetic"]["Subtraction"].append(problem)
         answers_by_type["Matrix Arithmetic"]["Subtraction"].append(answer)
 
         # Multiplication
-        A, B, C = generate_matrix_multiplication(Config.PROBLEM_LENGTH)
-        problem, answer = format_matrix_problem_answer(A, B, C, '\\cdot', i+1)
+        problem, answer = generate_matrix_multiplication(Config.PROBLEM_LENGTH)
         problems_by_type["Matrix Arithmetic"]["Multiplication"].append(problem)
         answers_by_type["Matrix Arithmetic"]["Multiplication"].append(answer)
 
-        matrix_data = MatrixProperties.generate_from_rref(Config.PROBLEM_LENGTH)
-        problem, answer = format_matrix_properties_problem(matrix_data, i+1)
+        # Calculus problems
+        # Limit
+        limit_exercise = CalculusExercises.generate_limit_exercise()
+        problems_by_type["Calculus"]["Limit"].append(limit_exercise["problem"])
+        answers_by_type["Calculus"]["Limit"].append(limit_exercise["answer"])
+
+        # Derivative
+        derivative_exercise = CalculusExercises.generate_derivative_exercise()
+        problems_by_type["Calculus"]["Derivative"].append(derivative_exercise["problem"])
+        answers_by_type["Calculus"]["Derivative"].append(derivative_exercise["answer"])
+
+        # Integral
+        integral_exercise = CalculusExercises.generate_integral_exercise()
+        problems_by_type["Calculus"]["Integral"].append(integral_exercise["problem"])
+        answers_by_type["Calculus"]["Integral"].append(integral_exercise["answer"])
+
+        # Partial Derivative
+        partial_derivative_exercise = CalculusExercises.generate_partial_derivative_exercise()
+        problems_by_type["Calculus"]["Partial Derivative"].append(partial_derivative_exercise["problem"])
+        answers_by_type["Calculus"]["Partial Derivative"].append(partial_derivative_exercise["answer"])
+
+        problem, answer = MatrixProperties.generate_from_rref(Config.PROBLEM_LENGTH)
         problems_by_type["Matrix Properties"]["Properties"].append(problem)
         answers_by_type["Matrix Properties"]["Properties"].append(answer)
 

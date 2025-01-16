@@ -8,10 +8,10 @@ def format_vector_problem_answer(problem, answer, operation, index):
 
     # 简化为只显示向量
     problem_str = (
-        f"$\\mathbf{{u}} = \\begin{{bmatrix}} {vector_elements_u} \\end{{bmatrix}}$, "
-        f"$\\mathbf{{v}} = \\begin{{bmatrix}} {vector_elements_v} \\end{{bmatrix}}$\n\n"
+        f"$$\\mathbf{{u}} = \\begin{{bmatrix}} {vector_elements_u} \\end{{bmatrix}}, "
+        f"\\mathbf{{v}} = \\begin{{bmatrix}} {vector_elements_v} \\end{{bmatrix}}$$\n\n"
     )
-    answer_str = f"$\\begin{{bmatrix}} {answer_elements} \\end{{bmatrix}}$"
+    answer_str = f"$$\\begin{{bmatrix}} {answer_elements} \\end{{bmatrix}}$$"
     return problem_str, answer_str
 
 def format_matrix_problem_answer(A, B, C, operation, index):
@@ -21,8 +21,8 @@ def format_matrix_problem_answer(A, B, C, operation, index):
             rows.append(' & '.join(str(x) for x in matrix[i]))
         return ' \\\\ '.join(rows)
 
-    problem_str = f"Let $A = \\begin{{bmatrix}} {matrix_to_latex(A)} \\end{{bmatrix}}$ and $B = \\begin{{bmatrix}} {matrix_to_latex(B)} \\end{{bmatrix}}$"
-    answer_str = f"{index}: $\\begin{{bmatrix}} {matrix_to_latex(C)} \\end{{bmatrix}}$"
+    problem_str = f"Let $$A = \\begin{{bmatrix}} {matrix_to_latex(A)} \\end{{bmatrix}}$$ and $$B = \\begin{{bmatrix}} {matrix_to_latex(B)} \\end{{bmatrix}}$$"
+    answer_str = f"{index}: $$\\begin{{bmatrix}} {matrix_to_latex(C)} \\end{{bmatrix}}$$"
     return problem_str, answer_str
 
 def format_gaussian_problem_answer(augmented, rref, solution, index):
@@ -32,9 +32,9 @@ def format_gaussian_problem_answer(augmented, rref, solution, index):
             rows.append(' & '.join(str(x) for x in matrix[i]))
         return ' \\\\ '.join(rows)
 
-    problem_str = f"Solve the system of linear equations represented by the augmented matrix: $\\begin{{bmatrix}} {matrix_to_latex(augmented)} \\end{{bmatrix}}$"
-    rref_str = f"{index}: RREF = $\\begin{{bmatrix}} {matrix_to_latex(rref)} \\end{{bmatrix}}$"
-    solution_str = f"{index}: x = $\\begin{{bmatrix}} {matrix_to_latex(solution)} \\end{{bmatrix}}$"
+    problem_str = f"Solve the system of linear equations represented by the augmented matrix: $$\\begin{{bmatrix}} {matrix_to_latex(augmented)} \\end{{bmatrix}}$$"
+    rref_str = f"{index}: RREF = $$\\begin{{bmatrix}} {matrix_to_latex(rref)} \\end{{bmatrix}}$$"
+    solution_str = f"{index}: x = $$\\begin{{bmatrix}} {matrix_to_latex(solution)} \\end{{bmatrix}}$$"
     return problem_str, rref_str, solution_str
 
 
@@ -69,7 +69,7 @@ def format_matrix_properties_problem(matrix_data, index):
                 return f"r_{j} := r_{j} - ({factor})r_{i}"
 
     problem_str = (
-        f"$A = \\begin{{bmatrix}} {matrix_to_latex(matrix_data['original'])} \\end{{bmatrix}}$\n\n"
+        f"$$A = \\begin{{bmatrix}} {matrix_to_latex(matrix_data['original'])} \\end{{bmatrix}}$$\n\n"
     )
 
     answer_str = (
@@ -168,7 +168,7 @@ def format_rref_problem(matrix_data, index):
         return step_desc  # 如果无法解析，返回原始描述
 
     problem_str = (
-        f"$A = \\begin{{bmatrix}} {matrix_to_latex(matrix_data['original'])} \\end{{bmatrix}}$\n\n"
+        f"$$A = \\begin{{bmatrix}} {matrix_to_latex(matrix_data['original'])} \\end{{bmatrix}}$$\n\n"
     )
 
     answer_str = (

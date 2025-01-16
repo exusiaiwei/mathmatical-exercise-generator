@@ -9,7 +9,10 @@ abstract: |
   This is **exercise** ${exercise_number} for Foundations of Mathematical, WS24.
   Generated on ${date} with ${num_problems} problems per section.
 format:
-  ilm-typst: default
+  ilm-typst:
+    math:
+      numbering: false
+      equation-prefix: ""
 ---
 
 ${content}
