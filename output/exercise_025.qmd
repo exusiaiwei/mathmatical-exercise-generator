@@ -1,0 +1,867 @@
+---
+title: |
+  Exercise 25:
+
+  Foundations of Mathematical, WS24
+author: "Zichao Wei"
+date: today
+abstract: |
+  This is **exercise** 25 for Foundations of Mathematical, WS24.
+  Generated on 2025-05-12 with 10 problems per section.
+format:
+  ilm-typst:
+    math:
+      numbering: false
+      equation-prefix: ""
+---
+
+# Problems
+
+## Vector Arithmetic
+
+### Addition
+Find the sum of the following vectors $\mathbf{u}$ and $\mathbf{v}$
+
+1. $\mathbf{u} = \begin{bmatrix} -1 \\ 1 \\ -4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 10 \\ 4 \\ 0 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+2. $\mathbf{u} = \begin{bmatrix} 0 \\ -7 \\ -3 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -4 \\ 6 \\ -4 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+3. $\mathbf{u} = \begin{bmatrix} -3 \\ -3 \\ -4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -9 \\ 4 \\ -10 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+4. $\mathbf{u} = \begin{bmatrix} -8 \\ 5 \\ -4 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 5 \\ -6 \\ -7 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+5. $\mathbf{u} = \begin{bmatrix} -1 \\ -8 \\ 9 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -7 \\ 8 \\ 8 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+6. $\mathbf{u} = \begin{bmatrix} 4 \\ 2 \\ 7 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -7 \\ 1 \\ 8 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+7. $\mathbf{u} = \begin{bmatrix} 2 \\ 6 \\ -5 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 0 \\ -2 \\ 7 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+8. $\mathbf{u} = \begin{bmatrix} 8 \\ 6 \\ -8 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 1 \\ -1 \\ 3 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+9. $\mathbf{u} = \begin{bmatrix} -8 \\ -10 \\ -8 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -7 \\ -1 \\ -2 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+10. $\mathbf{u} = \begin{bmatrix} 9 \\ 4 \\ -10 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -9 \\ 1 \\ -5 \end{bmatrix}$ $\mathbf{u} + \mathbf{v}$.
+
+### Subtraction
+Find the difference of the following vectors $\mathbf{u}$ and $\mathbf{v}$
+
+1. $\mathbf{u} = \begin{bmatrix} -3 \\ 4 \\ 1 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -1 \\ 9 \\ -1 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+2. $\mathbf{u} = \begin{bmatrix} -5 \\ -2 \\ -7 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -9 \\ -5 \\ 8 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+3. $\mathbf{u} = \begin{bmatrix} 2 \\ 6 \\ -5 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -6 \\ -9 \\ 10 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+4. $\mathbf{u} = \begin{bmatrix} -5 \\ 0 \\ -8 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -4 \\ 7 \\ -6 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+5. $\mathbf{u} = \begin{bmatrix} 5 \\ 1 \\ -10 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} -2 \\ -10 \\ -6 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+6. $\mathbf{u} = \begin{bmatrix} 4 \\ 0 \\ 6 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 3 \\ -2 \\ 9 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+7. $\mathbf{u} = \begin{bmatrix} -8 \\ 7 \\ -8 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 4 \\ 1 \\ -7 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+8. $\mathbf{u} = \begin{bmatrix} 0 \\ 0 \\ -6 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 8 \\ -1 \\ -4 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+9. $\mathbf{u} = \begin{bmatrix} -4 \\ 1 \\ 10 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 4 \\ 9 \\ 3 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+10. $\mathbf{u} = \begin{bmatrix} -5 \\ 7 \\ -2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 2 \\ 3 \\ -9 \end{bmatrix}$ $\mathbf{u} - \mathbf{v}$.
+
+### Scalar Multiplication
+Find the scalar product of the following vector $\mathbf{u}$ and scalar $k$
+
+1. $\mathbf{u} = \begin{bmatrix} 8 \\ -5 \\ 3 \end{bmatrix}$ $4\mathbf{v}$.
+
+2. $\mathbf{u} = \begin{bmatrix} 9 \\ 7 \\ -1 \end{bmatrix}$ $8\mathbf{v}$.
+
+3. $\mathbf{u} = \begin{bmatrix} 3 \\ 1 \\ -8 \end{bmatrix}$ $7\mathbf{v}$.
+
+4. $\mathbf{u} = \begin{bmatrix} -1 \\ -1 \\ 0 \end{bmatrix}$ $4\mathbf{v}$.
+
+5. $\mathbf{u} = \begin{bmatrix} -8 \\ -1 \\ 0 \end{bmatrix}$ $-2\mathbf{v}$.
+
+6. $\mathbf{u} = \begin{bmatrix} -6 \\ 6 \\ 2 \end{bmatrix}$ $4\mathbf{v}$.
+
+7. $\mathbf{u} = \begin{bmatrix} -9 \\ -6 \\ 4 \end{bmatrix}$ $-10\mathbf{v}$.
+
+8. $\mathbf{u} = \begin{bmatrix} 6 \\ -3 \\ -1 \end{bmatrix}$ $-9\mathbf{v}$.
+
+9. $\mathbf{u} = \begin{bmatrix} -4 \\ 8 \\ 9 \end{bmatrix}$ $-8\mathbf{v}$.
+
+10. $\mathbf{u} = \begin{bmatrix} 7 \\ 6 \\ 6 \end{bmatrix}$ $-1\mathbf{v}$.
+
+## Matrix Arithmetic
+
+### Addition
+Find the sum of the following matrices $A$ and $B$
+
+1. $$A = \begin{bmatrix} -6 & 3 & 1 \\ -8 & 0 & -5 \\ -6 & -8 & 3 \end{bmatrix}$$ and $$B = \begin{bmatrix} 5 & 4 & 0 \\ -4 & 9 & -3 \\ -5 & 1 & -4 \end{bmatrix}$$
+
+2. $$A = \begin{bmatrix} 8 & -5 & -6 \\ -10 & -6 & 6 \\ 5 & -8 & 3 \end{bmatrix}$$ and $$B = \begin{bmatrix} 5 & -10 & -9 \\ -6 & -4 & -10 \\ -5 & -6 & -6 \end{bmatrix}$$
+
+3. $$A = \begin{bmatrix} -1 & -9 & -2 \\ 5 & 4 & 8 \\ 9 & -8 & 1 \end{bmatrix}$$ and $$B = \begin{bmatrix} 4 & -4 & 1 \\ 1 & -3 & -1 \\ 0 & -9 & -1 \end{bmatrix}$$
+
+4. $$A = \begin{bmatrix} -4 & 0 & -1 \\ -8 & 3 & -2 \\ -7 & -8 & 4 \end{bmatrix}$$ and $$B = \begin{bmatrix} 7 & -1 & -4 \\ -7 & 7 & -9 \\ 2 & 9 & 2 \end{bmatrix}$$
+
+5. $$A = \begin{bmatrix} 4 & 5 & -4 \\ 7 & -6 & 4 \\ 4 & 7 & 2 \end{bmatrix}$$ and $$B = \begin{bmatrix} 8 & 5 & 3 \\ 0 & 5 & -10 \\ -9 & -7 & 0 \end{bmatrix}$$
+
+6. $$A = \begin{bmatrix} -5 & -2 & 6 \\ -7 & -7 & -9 \\ 3 & -2 & -9 \end{bmatrix}$$ and $$B = \begin{bmatrix} 4 & 3 & -10 \\ 2 & -8 & -3 \\ 6 & -2 & 9 \end{bmatrix}$$
+
+7. $$A = \begin{bmatrix} -7 & -2 & 6 \\ -8 & 2 & 3 \\ 1 & 2 & 1 \end{bmatrix}$$ and $$B = \begin{bmatrix} -7 & -9 & 3 \\ -10 & 2 & 1 \\ 1 & -8 & 7 \end{bmatrix}$$
+
+8. $$A = \begin{bmatrix} -7 & 3 & -4 \\ -5 & -5 & 2 \\ 8 & 0 & -7 \end{bmatrix}$$ and $$B = \begin{bmatrix} -7 & -2 & -10 \\ -6 & -10 & -5 \\ -5 & 7 & 7 \end{bmatrix}$$
+
+9. $$A = \begin{bmatrix} -6 & -5 & -4 \\ 6 & -8 & 2 \\ 1 & -1 & 5 \end{bmatrix}$$ and $$B = \begin{bmatrix} -5 & -10 & 0 \\ -5 & -8 & 6 \\ -8 & 1 & 5 \end{bmatrix}$$
+
+10. $$A = \begin{bmatrix} 8 & -1 & -4 \\ -10 & 7 & -1 \\ -3 & 2 & -6 \end{bmatrix}$$ and $$B = \begin{bmatrix} -9 & 7 & -1 \\ 3 & 0 & 4 \\ -3 & 7 & 4 \end{bmatrix}$$
+
+### Subtraction
+Find the difference of the following matrices $A$ and $B$
+
+1. $$A = \begin{bmatrix} 3 & 9 & 8 \\ -2 & 1 & -7 \\ -9 & -8 & -9 \end{bmatrix}$$ and $$B = \begin{bmatrix} -6 & -9 & 8 \\ 4 & 2 & -3 \\ 1 & -6 & -1 \end{bmatrix}$$
+
+2. $$A = \begin{bmatrix} 6 & -9 & -9 \\ 7 & -7 & 2 \\ -4 & 2 & 6 \end{bmatrix}$$ and $$B = \begin{bmatrix} 5 & 2 & 6 \\ 1 & 8 & 9 \\ -7 & -7 & 2 \end{bmatrix}$$
+
+3. $$A = \begin{bmatrix} -6 & -7 & -9 \\ -9 & -4 & 4 \\ 7 & 4 & -1 \end{bmatrix}$$ and $$B = \begin{bmatrix} -7 & -1 & -1 \\ 5 & -8 & 8 \\ 7 & 2 & -1 \end{bmatrix}$$
+
+4. $$A = \begin{bmatrix} 4 & 0 & 1 \\ 0 & -8 & 5 \\ 1 & -5 & -1 \end{bmatrix}$$ and $$B = \begin{bmatrix} 5 & -2 & 7 \\ 2 & 6 & -2 \\ 6 & 8 & -6 \end{bmatrix}$$
+
+5. $$A = \begin{bmatrix} 3 & 6 & -10 \\ -6 & 3 & 0 \\ 8 & -10 & 8 \end{bmatrix}$$ and $$B = \begin{bmatrix} 8 & -10 & 3 \\ 2 & 1 & -3 \\ 3 & -2 & -6 \end{bmatrix}$$
+
+6. $$A = \begin{bmatrix} -5 & 1 & -2 \\ 3 & -4 & -7 \\ -9 & -6 & -6 \end{bmatrix}$$ and $$B = \begin{bmatrix} -6 & 3 & 0 \\ -7 & 2 & 0 \\ -2 & -9 & 3 \end{bmatrix}$$
+
+7. $$A = \begin{bmatrix} 0 & 3 & -10 \\ -1 & -2 & 6 \\ 9 & 4 & 0 \end{bmatrix}$$ and $$B = \begin{bmatrix} 1 & 9 & -10 \\ -1 & -9 & 7 \\ 9 & -9 & -6 \end{bmatrix}$$
+
+8. $$A = \begin{bmatrix} -1 & -10 & -6 \\ -6 & 7 & -9 \\ 9 & -8 & 5 \end{bmatrix}$$ and $$B = \begin{bmatrix} -1 & 1 & 9 \\ -1 & 3 & 6 \\ -1 & 8 & -10 \end{bmatrix}$$
+
+9. $$A = \begin{bmatrix} 9 & 8 & -4 \\ 8 & 7 & 0 \\ 3 & 4 & 8 \end{bmatrix}$$ and $$B = \begin{bmatrix} 7 & -2 & 0 \\ -10 & 2 & -1 \\ 5 & -4 & -6 \end{bmatrix}$$
+
+10. $$A = \begin{bmatrix} 5 & -10 & 2 \\ 0 & 6 & 8 \\ -9 & 0 & 7 \end{bmatrix}$$ and $$B = \begin{bmatrix} -6 & 6 & 8 \\ 3 & 2 & 0 \\ -3 & -9 & -5 \end{bmatrix}$$
+
+### Multiplication
+Find the product of the following matrices $A$ and $B$
+
+1. $$A = \begin{bmatrix} 5 & -5 & 5 \\ -1 & -6 & 1 \\ 0 & -10 & 7 \end{bmatrix}$$ and $$B = \begin{bmatrix} -6 & 3 & -9 \\ -6 & 2 & -7 \\ -5 & -10 & 0 \end{bmatrix}$$
+
+2. $$A = \begin{bmatrix} -10 & -9 & -10 \\ -6 & 4 & 4 \\ -7 & -8 & 6 \end{bmatrix}$$ and $$B = \begin{bmatrix} -1 & -9 & 2 \\ -1 & 9 & 6 \\ 0 & 2 & 4 \end{bmatrix}$$
+
+3. $$A = \begin{bmatrix} -8 & -9 & -1 \\ 8 & -9 & -4 \\ 3 & -3 & -2 \end{bmatrix}$$ and $$B = \begin{bmatrix} -5 & 7 & -4 \\ -4 & 6 & -8 \\ -9 & -8 & 5 \end{bmatrix}$$
+
+4. $$A = \begin{bmatrix} 3 & -8 & 6 \\ 4 & 7 & 4 \\ -3 & -10 & -9 \end{bmatrix}$$ and $$B = \begin{bmatrix} -6 & 5 & -2 \\ 8 & 0 & -8 \\ -6 & 2 & -7 \end{bmatrix}$$
+
+5. $$A = \begin{bmatrix} 5 & 7 & 0 \\ -8 & 6 & 0 \\ 3 & 1 & 4 \end{bmatrix}$$ and $$B = \begin{bmatrix} -1 & 2 & -5 \\ 8 & 0 & 9 \\ -9 & 6 & -3 \end{bmatrix}$$
+
+6. $$A = \begin{bmatrix} 5 & -10 & 6 \\ -2 & -6 & -2 \\ -5 & -7 & 7 \end{bmatrix}$$ and $$B = \begin{bmatrix} 2 & -3 & -4 \\ -3 & -6 & 8 \\ -3 & -6 & -6 \end{bmatrix}$$
+
+7. $$A = \begin{bmatrix} -6 & 0 & -1 \\ 7 & 6 & -3 \\ -6 & -1 & 0 \end{bmatrix}$$ and $$B = \begin{bmatrix} 7 & 6 & -9 \\ 7 & 2 & 9 \\ 4 & 4 & 4 \end{bmatrix}$$
+
+8. $$A = \begin{bmatrix} -10 & 1 & -10 \\ -6 & 7 & 0 \\ 3 & -7 & 8 \end{bmatrix}$$ and $$B = \begin{bmatrix} -5 & 8 & 4 \\ 5 & -3 & -10 \\ -2 & -4 & -3 \end{bmatrix}$$
+
+9. $$A = \begin{bmatrix} -9 & -3 & 9 \\ -7 & -10 & 6 \\ 3 & 1 & -8 \end{bmatrix}$$ and $$B = \begin{bmatrix} 2 & 7 & 5 \\ 4 & 0 & 1 \\ 0 & -1 & -9 \end{bmatrix}$$
+
+10. $$A = \begin{bmatrix} -8 & -8 & -5 \\ 5 & -10 & 8 \\ 6 & -4 & -6 \end{bmatrix}$$ and $$B = \begin{bmatrix} -9 & -5 & 5 \\ -7 & -6 & -10 \\ 0 & 3 & -1 \end{bmatrix}$$
+
+## Matrix Properties
+
+### Properties
+For each matrix $A$, find:
+
+a) rank($A$)
+
+b) nullity($A$)
+
+c) det($A$)
+
+d) $A^{-1}$ (if exists)
+
+e) basis of ker($A$)
+
+1. $$A = \begin{bmatrix} 1 & -2 & 1 \\ 0 & -1 & 0 \\ 0 & 2 & -1 \end{bmatrix}$$
+
+2. $$A = \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & -1 \\ 0 & 1 & -1 \end{bmatrix}$$
+
+3. $$A = \begin{bmatrix} 9 & -9 & -16 \\ 1 & 0 & -1 \\ 4 & -4 & -7 \end{bmatrix}$$
+
+4. $$A = \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & -2 \\ -2 & 0 & 4 \end{bmatrix}$$
+
+5. $$A = \begin{bmatrix} 1 & 2 & -1 \\ 0 & -1 & 1 \\ 0 & 1 & -1 \end{bmatrix}$$
+
+6. $$A = \begin{bmatrix} 1 & 3 & 8 \\ 0 & 1 & 3 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+7. $$A = \begin{bmatrix} 1 & 1 & 0 \\ 4 & 5 & 0 \\ -2 & -2 & 1 \end{bmatrix}$$
+
+8. $$A = \begin{bmatrix} 1 & 1 & -1 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{bmatrix}$$
+
+9. $$A = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & -2 & -2 \end{bmatrix}$$
+
+10. $$A = \begin{bmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ 1 & 0 & 1 \end{bmatrix}$$
+
+### RREF
+Find the Reduced Row Echelon Form of the following matrix $A$
+
+1. $$A = \begin{bmatrix} 1 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+
+2. $$A = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+3. $$A = \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+
+4. $$A = \begin{bmatrix} 0 & -1 & 0 \\ 1 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+
+5. $$A = \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 5 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+6. $$A = \begin{bmatrix} 1 & -1 & 3 \\ 0 & 1 & 2 \\ -2 & 2 & -5 \end{bmatrix}$$
+
+7. $$A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+
+8. $$A = \begin{bmatrix} 1 & 0 & 1 \\ 0 & -1 & -2 \\ 2 & 1 & 3 \end{bmatrix}$$
+
+9. $$A = \begin{bmatrix} 1 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+
+10. $$A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -2 & -1 & 1 \end{bmatrix}$$
+
+## Calculus
+
+### Limit
+Calculate the following limits
+
+1. Calculate the limit of the following expression: $$\lim_{x \to oo} \left(1 + \frac{1}{x}\right)^{x}$$
+
+2. Calculate the limit of the following expression: $$\lim_{x \to -3} - 3 x^{2} - 5 x$$
+
+3. Calculate the limit of the following expression: $$\lim_{x \to 3} - 3 x^{2} - 5 x + 5$$
+
+4. Calculate the limit of the following expression: $$\lim_{x \to oo} \left(1 + \frac{1}{x}\right)^{x}$$
+
+5. Calculate the limit of the following expression: $$\lim_{x \to oo} \left(1 + \frac{1}{x}\right)^{x}$$
+
+6. Calculate the limit of the following expression: $$\lim_{x \to 0} \frac{\log{\left(x + 1 \right)}}{x}$$
+
+7. Calculate the limit of the following expression: $$\lim_{x \to 0} \frac{\log{\left(x + 1 \right)}}{x}$$
+
+8. Calculate the limit of the following expression: $$\lim_{x \to -1} - 4 x^{2} - 3 x + 5$$
+
+9. Calculate the limit of the following expression: $$\lim_{x \to oo} \left(1 + \frac{1}{x}\right)^{x}$$
+
+10. Calculate the limit of the following expression: $$\lim_{x \to 3} - 3 x - 4$$
+
+### Derivative
+Calculate the derivatives of the following expressions
+
+1. Calculate the derivative of the following expression: $$x^{2} e^{x}$$
+
+2. Calculate the derivative of the following expression: $$e^{2 x} + e^{x^{2}}$$
+
+3. Calculate the derivative of the following expression: $$\frac{x}{x^{2} + 1}$$
+
+4. Calculate the derivative of the following expression: $$e^{2 x} + e^{x^{2}}$$
+
+5. Calculate the derivative of the following expression: $$x^{4}$$
+
+6. Calculate the derivative of the following expression: $$\log{\left(x + 1 \right)} + \log{\left(x^{2} + 1 \right)}$$
+
+7. Calculate the derivative of the following expression: $$e^{2 x} + e^{x^{2}}$$
+
+8. Calculate the derivative of the following expression: $$\frac{x^{3}}{x^{2} + 1}$$
+
+9. Calculate the derivative of the following expression: $$e^{x}$$
+
+10. Calculate the derivative of the following expression: $$\log{\left(x + 1 \right)} + \log{\left(x^{2} + 1 \right)}$$
+
+### Integral
+Calculate the indefinite and definite integrals of the following expressions
+
+1. Evaluate the improper integral:
+$$\int_{1}^{oo} \frac{1}{\sqrt{x}} dx$$
+
+2. the indefinite integral and evaluate from 1 to 5:
+$$\int \frac{\sin{\left(x \right)}}{x} dx$$
+
+3. the indefinite integral and evaluate from 3 to 4:
+$$\int \frac{1}{\left(x - 2\right) \left(x + 1\right)} dx$$
+
+4. the indefinite integral and evaluate from 1 to 5:
+$$\int \frac{1}{\sqrt{1 - x^{2}}} dx$$
+
+5. the indefinite integral and evaluate from 4 to 5:
+$$\int \frac{3 x + 2}{x^{2} - 4} dx$$
+
+6. Evaluate the improper integral:
+$$\int_{1}^{oo} \frac{1}{x^{2}} dx$$
+
+7. the indefinite integral and evaluate from 4 to 4:
+$$\int e^{x} \sin{\left(x \right)} dx$$
+
+8. the indefinite integral and evaluate from 1 to 5:
+$$\int e^{x} \sin{\left(x \right)} dx$$
+
+9. Evaluate the improper integral:
+$$\int_{1}^{oo} \frac{1}{x^{2}} dx$$
+
+10. the indefinite integral and evaluate from 2 to 3:
+$$\int \frac{1}{x \log{\left(x \right)}} dx$$
+
+### Partial Derivative
+Calculate the partial derivatives of the following expressions
+
+1. the partial derivatives of the function:
+$$f(x,y) = x^{3} y^{2} - 3 x^{2} y + 2 x y^{3}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+2. the partial derivatives of the function:
+$$f(x,y) = - \log{\left(x y \right)} + \log{\left(x^{3} + y^{3} \right)}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+3. Given the implicit function:
+$$x^{2} y + x y^{2} - x y = 0$$
+ $\frac{\partial y}{\partial x}$
+
+4. the partial derivatives of the function:
+$$f(x,y) = - \log{\left(x y \right)} + \log{\left(x^{3} + y^{3} \right)}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+5. Given the implicit function:
+$$x^{2} y + x y^{2} - x y = 0$$
+ $\frac{\partial y}{\partial x}$
+
+6. the partial derivatives of the function:
+$$f(x,y) = - \log{\left(x y \right)} + \log{\left(x^{3} + y^{3} \right)}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+7. the mixed partial derivative of:
+$$f(x,y) = x^{3} y^{2} + x y^{4}$$
+ $\frac{\partial^2 f}{\partial x \partial y}$
+
+8. the partial derivatives of the function:
+$$f(x,y) = x^{3} y^{2} - 3 x^{2} y + 2 x y^{3}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+9. the partial derivatives of the function:
+$$f(x,y) = x^{3} y^{2} - 3 x^{2} y + 2 x y^{3}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+10. the partial derivatives of the function:
+$$f(x,y) = - \log{\left(x y \right)} + \log{\left(x^{3} + y^{3} \right)}$$
+ $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$
+
+
+# Solutions
+
+## Vector Arithmetic
+
+### Addition
+
+$\begin{bmatrix} 9 \\ 5 \\ -4 \end{bmatrix}$ $\begin{bmatrix} -4 \\ -1 \\ -7 \end{bmatrix}$ $\begin{bmatrix} -12 \\ 1 \\ -14 \end{bmatrix}$ $\begin{bmatrix} -3 \\ -1 \\ -11 \end{bmatrix}$ $\begin{bmatrix} -8 \\ 0 \\ 17 \end{bmatrix}$
+
+$\begin{bmatrix} -3 \\ 3 \\ 15 \end{bmatrix}$ $\begin{bmatrix} 2 \\ 4 \\ 2 \end{bmatrix}$ $\begin{bmatrix} 9 \\ 5 \\ -5 \end{bmatrix}$ $\begin{bmatrix} -15 \\ -11 \\ -10 \end{bmatrix}$ $\begin{bmatrix} 0 \\ 5 \\ -15 \end{bmatrix}$
+
+### Subtraction
+
+$\begin{bmatrix} -2 \\ -5 \\ 2 \end{bmatrix}$ $\begin{bmatrix} 4 \\ 3 \\ -15 \end{bmatrix}$ $\begin{bmatrix} 8 \\ 15 \\ -15 \end{bmatrix}$ $\begin{bmatrix} -1 \\ -7 \\ -2 \end{bmatrix}$ $\begin{bmatrix} 7 \\ 11 \\ -4 \end{bmatrix}$
+
+$\begin{bmatrix} 1 \\ 2 \\ -3 \end{bmatrix}$ $\begin{bmatrix} -12 \\ 6 \\ -1 \end{bmatrix}$ $\begin{bmatrix} -8 \\ 1 \\ -2 \end{bmatrix}$ $\begin{bmatrix} -8 \\ -8 \\ 7 \end{bmatrix}$ $\begin{bmatrix} -7 \\ 4 \\ 7 \end{bmatrix}$
+
+### Scalar Multiplication
+
+1: $\begin{bmatrix} 32 \\ -20 \\ 12 \end{bmatrix}$ 2: $\begin{bmatrix} 72 \\ 56 \\ -8 \end{bmatrix}$ 3: $\begin{bmatrix} 21 \\ 7 \\ -56 \end{bmatrix}$ 4: $\begin{bmatrix} -4 \\ -4 \\ 0 \end{bmatrix}$ 5: $\begin{bmatrix} 16 \\ 2 \\ 0 \end{bmatrix}$
+
+6: $\begin{bmatrix} -24 \\ 24 \\ 8 \end{bmatrix}$ 7: $\begin{bmatrix} 90 \\ 60 \\ -40 \end{bmatrix}$ 8: $\begin{bmatrix} -54 \\ 27 \\ 9 \end{bmatrix}$ 9: $\begin{bmatrix} 32 \\ -64 \\ -72 \end{bmatrix}$ 10: $\begin{bmatrix} -7 \\ -6 \\ -6 \end{bmatrix}$
+
+## Matrix Arithmetic
+
+### Addition
+
+1: $$\begin{bmatrix} -1 & 7 & 1 \\ -12 & 9 & -8 \\ -11 & -7 & -1 \end{bmatrix}$$ 1: $$\begin{bmatrix} 13 & -15 & -15 \\ -16 & -10 & -4 \\ 0 & -14 & -3 \end{bmatrix}$$ 1: $$\begin{bmatrix} 3 & -13 & -1 \\ 6 & 1 & 7 \\ 9 & -17 & 0 \end{bmatrix}$$ 1: $$\begin{bmatrix} 3 & -1 & -5 \\ -15 & 10 & -11 \\ -5 & 1 & 6 \end{bmatrix}$$ 1: $$\begin{bmatrix} 12 & 10 & -1 \\ 7 & -1 & -6 \\ -5 & 0 & 2 \end{bmatrix}$$
+
+1: $$\begin{bmatrix} -1 & 1 & -4 \\ -5 & -15 & -12 \\ 9 & -4 & 0 \end{bmatrix}$$ 1: $$\begin{bmatrix} -14 & -11 & 9 \\ -18 & 4 & 4 \\ 2 & -6 & 8 \end{bmatrix}$$ 1: $$\begin{bmatrix} -14 & 1 & -14 \\ -11 & -15 & -3 \\ 3 & 7 & 0 \end{bmatrix}$$ 1: $$\begin{bmatrix} -11 & -15 & -4 \\ 1 & -16 & 8 \\ -7 & 0 & 10 \end{bmatrix}$$ 1: $$\begin{bmatrix} -1 & 6 & -5 \\ -7 & 7 & 3 \\ -6 & 9 & -2 \end{bmatrix}$$
+
+### Subtraction
+
+1: $$\begin{bmatrix} 9 & 18 & 0 \\ -6 & -1 & -4 \\ -10 & -2 & -8 \end{bmatrix}$$ 1: $$\begin{bmatrix} 1 & -11 & -15 \\ 6 & -15 & -7 \\ 3 & 9 & 4 \end{bmatrix}$$ 1: $$\begin{bmatrix} 1 & -6 & -8 \\ -14 & 4 & -4 \\ 0 & 2 & 0 \end{bmatrix}$$ 1: $$\begin{bmatrix} -1 & 2 & -6 \\ -2 & -14 & 7 \\ -5 & -13 & 5 \end{bmatrix}$$ 1: $$\begin{bmatrix} -5 & 16 & -13 \\ -8 & 2 & 3 \\ 5 & -8 & 14 \end{bmatrix}$$
+
+1: $$\begin{bmatrix} 1 & -2 & -2 \\ 10 & -6 & -7 \\ -7 & 3 & -9 \end{bmatrix}$$ 1: $$\begin{bmatrix} -1 & -6 & 0 \\ 0 & 7 & -1 \\ 0 & 13 & 6 \end{bmatrix}$$ 1: $$\begin{bmatrix} 0 & -11 & -15 \\ -5 & 4 & -15 \\ 10 & -16 & 15 \end{bmatrix}$$ 1: $$\begin{bmatrix} 2 & 10 & -4 \\ 18 & 5 & 1 \\ -2 & 8 & 14 \end{bmatrix}$$ 1: $$\begin{bmatrix} 11 & -16 & -6 \\ -3 & 4 & 8 \\ -6 & 9 & 12 \end{bmatrix}$$
+
+### Multiplication
+
+1: $$\begin{bmatrix} -25 & -45 & -10 \\ 37 & -25 & 51 \\ 25 & -90 & 70 \end{bmatrix}$$ 1: $$\begin{bmatrix} 19 & -11 & -114 \\ 2 & 98 & 28 \\ 15 & 3 & -38 \end{bmatrix}$$ 1: $$\begin{bmatrix} 85 & -102 & 99 \\ 32 & 34 & 20 \\ 15 & 19 & 2 \end{bmatrix}$$ 1: $$\begin{bmatrix} -118 & 27 & 16 \\ 8 & 28 & -92 \\ -8 & -33 & 149 \end{bmatrix}$$ 1: $$\begin{bmatrix} 51 & 10 & 38 \\ 56 & -16 & 94 \\ -31 & 30 & -18 \end{bmatrix}$$
+
+1: $$\begin{bmatrix} 22 & 9 & -136 \\ 20 & 54 & -28 \\ -10 & 15 & -78 \end{bmatrix}$$ 1: $$\begin{bmatrix} -46 & -40 & 50 \\ 79 & 42 & -21 \\ -49 & -38 & 45 \end{bmatrix}$$ 1: $$\begin{bmatrix} 75 & -43 & -20 \\ 65 & -69 & -94 \\ -66 & 13 & 58 \end{bmatrix}$$ 1: $$\begin{bmatrix} -30 & -72 & -129 \\ -54 & -55 & -99 \\ 10 & 29 & 88 \end{bmatrix}$$ 1: $$\begin{bmatrix} 128 & 73 & 45 \\ 25 & 59 & 117 \\ -26 & -24 & 76 \end{bmatrix}$$
+
+## Matrix Properties
+
+### Properties
+
+**Solution**
+
+**Row Operations:**
+
+Step 1: $r_2 := -1r_2$
+$\begin{bmatrix} 1 & -2 & 1 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & 0 & -1 & 0 \\ 0 & 2 & -1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_1 := r_1 - (-2)r_2$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & -2 & 0 \\ 0 & 1 & 0 & | & 0 & -1 & 0 \\ 0 & 2 & -1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 3: $r_3 := r_3 - (2)r_2$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & -2 & 0 \\ 0 & 1 & 0 & | & 0 & -1 & 0 \\ 0 & 0 & -1 & | & 0 & 2 & 1 \end{bmatrix}$
+
+Step 4: $r_3 := -1r_3$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & -2 & 0 \\ 0 & 1 & 0 & | & 0 & -1 & 0 \\ 0 & 0 & 1 & | & 0 & -2 & -1 \end{bmatrix}$
+
+Step 5: $r_1 := r_1 - r_3$
+$\begin{bmatrix} 1 & 0 & 0 & | & 1 & 0 & 1 \\ 0 & 1 & 0 & | & 0 & -1 & 0 \\ 0 & 0 & 1 & | & 0 & -2 & -1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 3
+
+b) nullity($A$) = 0
+
+c) det($A$) = 0
+
+d) $A^{-1} = \begin{bmatrix} 1 & 2 & 2 \\ 0 & 3 & 2 \\ 0 & -2 & -1 \end{bmatrix}$
+
+e) ker($A$) = $\{\mathbf{0}\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_1 := r_1 - (2)r_2$
+$\begin{bmatrix} 1 & 0 & 2 & | & 1 & -2 & 0 \\ 0 & 1 & -1 & | & 0 & 1 & 0 \\ 0 & 1 & -1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_3 := r_3 - r_2$
+$\begin{bmatrix} 1 & 0 & 2 & | & 1 & -2 & 0 \\ 0 & 1 & -1 & | & 0 & 1 & 0 \\ 0 & 0 & 0 & | & 0 & -1 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\right\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_1 := 1/9r_1$
+$\begin{bmatrix} 1 & -1 & -16/9 & | & 1/9 & 0 & 0 \\ 1 & 0 & -1 & | & 0 & 1 & 0 \\ 4 & -4 & -7 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_2 := r_2 - r_1$
+$\begin{bmatrix} 1 & -1 & -16/9 & | & 1/9 & 0 & 0 \\ 0 & 1 & 7/9 & | & -1/9 & 1 & 0 \\ 4 & -4 & -7 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 3: $r_3 := r_3 - (4)r_1$
+$\begin{bmatrix} 1 & -1 & -16/9 & | & 1/9 & 0 & 0 \\ 0 & 1 & 7/9 & | & -1/9 & 1 & 0 \\ 0 & 0 & 1/9 & | & -4/9 & 0 & 1 \end{bmatrix}$
+
+Step 4: $r_1 := r_1 - (-1)r_2$
+$\begin{bmatrix} 1 & 0 & -1 & | & 0 & 1 & 0 \\ 0 & 1 & 7/9 & | & -1/9 & 1 & 0 \\ 0 & 0 & 1/9 & | & -4/9 & 0 & 1 \end{bmatrix}$
+
+Step 5: $r_3 := 9r_3$
+$\begin{bmatrix} 1 & 0 & -1 & | & 0 & 1 & 0 \\ 0 & 1 & 7/9 & | & -1/9 & 1 & 0 \\ 0 & 0 & 1 & | & -4 & 0 & 9 \end{bmatrix}$
+
+Step 6: $r_1 := r_1 - (-1)r_3$
+$\begin{bmatrix} 1 & 0 & 0 & | & -4 & 1 & 9 \\ 0 & 1 & 7/9 & | & -1/9 & 1 & 0 \\ 0 & 0 & 1 & | & -4 & 0 & 9 \end{bmatrix}$
+
+Step 7: $r_2 := r_2 - (7/9)r_3$
+$\begin{bmatrix} 1 & 0 & 0 & | & -4 & 1 & 9 \\ 0 & 1 & 0 & | & 3 & 1 & -7 \\ 0 & 0 & 1 & | & -4 & 0 & 9 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 3
+
+b) nullity($A$) = 0
+
+c) det($A$) = 0
+
+d) $A^{-1} = \begin{bmatrix} 0 & 0 & -1 \\ 0 & 1 & 1 \\ -3 & 0 & 8 \end{bmatrix}$
+
+e) ker($A$) = $\{\mathbf{0}\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_3 := r_3 - (-2)r_1$
+$\begin{bmatrix} 1 & 0 & -2 & | & 1 & 0 & 0 \\ 0 & 1 & -2 & | & 0 & 1 & 0 \\ 0 & 0 & 0 & | & 2 & 0 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} -2 \\ 2 \\ 1 \end{bmatrix}\right\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_2 := -1r_2$
+$\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -1 & | & 0 & -1 & 0 \\ 0 & 1 & -1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_1 := r_1 - (2)r_2$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & 2 & 0 \\ 0 & 1 & -1 & | & 0 & -1 & 0 \\ 0 & 1 & -1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 3: $r_3 := r_3 - r_2$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & 2 & 0 \\ 0 & 1 & -1 & | & 0 & -1 & 0 \\ 0 & 0 & 0 & | & 0 & 1 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}\right\}$
+
+
+
+**Solution**
+
+**Row Operations:**
+
+Step 1: $r_1 := r_1 - (3)r_2$
+$\begin{bmatrix} 1 & 0 & -1 & | & 1 & -3 & 0 \\ 0 & 1 & 3 & | & 0 & 1 & 0 \\ 0 & 0 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_1 := r_1 - (-1)r_3$
+$\begin{bmatrix} 1 & 0 & 0 & | & 1 & -3 & 1 \\ 0 & 1 & 3 & | & 0 & 1 & 0 \\ 0 & 0 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 3: $r_2 := r_2 - (3)r_3$
+$\begin{bmatrix} 1 & 0 & 0 & | & 1 & -3 & 1 \\ 0 & 1 & 0 & | & 0 & 1 & -3 \\ 0 & 0 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 3
+
+b) nullity($A$) = 0
+
+c) det($A$) = 0
+
+d) $A^{-1} = \begin{bmatrix} 1 & -3 & 2 \\ 0 & 1 & -2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+e) ker($A$) = $\{\mathbf{0}\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_2 := r_2 - (4)r_1$
+$\begin{bmatrix} 1 & 1 & 0 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & -4 & 1 & 0 \\ -2 & -2 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_3 := r_3 - (-2)r_1$
+$\begin{bmatrix} 1 & 1 & 0 & | & 1 & 0 & 0 \\ 0 & 1 & 0 & | & -4 & 1 & 0 \\ 0 & 0 & 1 & | & 2 & 0 & 1 \end{bmatrix}$
+
+Step 3: $r_1 := r_1 - r_2$
+$\begin{bmatrix} 1 & 0 & 0 & | & 5 & -1 & 0 \\ 0 & 1 & 0 & | & -4 & 1 & 0 \\ 0 & 0 & 1 & | & 2 & 0 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 3
+
+b) nullity($A$) = 0
+
+c) det($A$) = 0
+
+d) $A^{-1} = \begin{bmatrix} 1 & 0 & 0 \\ -2 & 1 & 1 \\ 2 & 0 & 1 \end{bmatrix}$
+
+e) ker($A$) = $\{\mathbf{0}\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_1 := r_1 - r_2$
+$\begin{bmatrix} 1 & 0 & 0 & | & 1 & -1 & 0 \\ 0 & 1 & -1 & | & 0 & 1 & 0 \\ 0 & -1 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_3 := r_3 - (-1)r_2$
+$\begin{bmatrix} 1 & 0 & 0 & | & 1 & -1 & 0 \\ 0 & 1 & -1 & | & 0 & 1 & 0 \\ 0 & 0 & 0 & | & 0 & 1 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} -1 \\ 1 \\ 1 \end{bmatrix}\right\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_3 := r_3 - (-2)r_2$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & 0 & 0 \\ 0 & 1 & 1 & | & 0 & 1 & 0 \\ 0 & 0 & 0 & | & 0 & 2 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix}\right\}$
+
+ **Solution**
+
+**Row Operations:**
+
+Step 1: $r_2 := r_2 - (-1)r_1$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & 0 & 0 \\ 0 & 1 & -1 & | & 1 & 1 & 0 \\ 1 & 0 & 1 & | & 0 & 0 & 1 \end{bmatrix}$
+
+Step 2: $r_3 := r_3 - r_1$
+$\begin{bmatrix} 1 & 0 & 1 & | & 1 & 0 & 0 \\ 0 & 1 & -1 & | & 1 & 1 & 0 \\ 0 & 0 & 0 & | & -1 & 0 & 1 \end{bmatrix}$
+
+**Results:**
+
+a) rank($A$) = 2
+
+b) nullity($A$) = 1
+
+c) det($A$) = 0
+
+d) $A^{-1} = \text{does not exist}$
+
+e) ker($A$) = $\text{span}\left\{\begin{bmatrix} -1 \\ 1 \\ 1 \end{bmatrix}\right\}$
+
+
+
+### RREF
+
+**Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_1 := r_1 - r_2$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(2) $r_1 := r_1 + (-1)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_2 := r_2 - r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+(2) $r_1 := r_1 + (-1)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+(3) $r_2 := r_2 - r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_1 := r_1 - r_3$
+
+$\quad \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(2) $r_1 := r_1 + (-2)r_2$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(3) $r_1 := r_1 - (2)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_1 := r_1 - r_2$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(2) $r_2 := r_2 + (-2)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(3) $r_2 := r_2 + (-1)r_1$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_2 := r_2 + (-2)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 3 \\ 0 & 0 & 1 \end{bmatrix}$
+
+(2) $r_2 := r_2 + (-1)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & -2 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+
+
+**Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_3 := r_3 - (2)r_1$
+
+$\quad \begin{bmatrix} 1 & -1 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+(2) $r_1 := r_1 + (-2)r_3$
+
+$\quad \begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{bmatrix}$
+
+(3) $r_2 := r_2 + (-2)r_3$
+
+$\quad \begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & -1 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_2 := r_2 + (-2)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(2) $r_1 := r_1 - r_2$
+
+$\quad \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_3 := r_3 + (-2)r_1$
+
+$\quad \begin{bmatrix} 1 & 0 & 1 \\ 0 & -1 & -2 \\ 0 & 1 & 1 \end{bmatrix}$
+
+(2) $r_2 := r_2 - (2)r_3$
+
+$\quad \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ 0 & 1 & 1 \end{bmatrix}$
+
+(3) $r_3 := r_3 + (-1)r_2$
+
+$\quad \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_2 := r_2 + (-1)r_3$
+
+$\quad \begin{bmatrix} 1 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+(2) $r_1 := r_1 + (-1)r_3$
+
+$\quad \begin{bmatrix} 1 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & -1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+
+ **Solution**
+
+**Elementary Row Operations:**
+
+(1) $r_3 := r_3 - (2)r_1$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -1 & 1 \end{bmatrix}$
+
+(2) $r_3 := r_3 - r_2$
+
+$\quad \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+**Result:**
+
+$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+
+
+
+## Calculus
+
+### Limit
+
+The limit is: $$e$$ The limit is: $$-12$$ The limit is: $$-37$$ The limit is: $$e$$ The limit is: $$e$$
+
+The limit is: $$1$$ The limit is: $$1$$ The limit is: $$4$$ The limit is: $$e$$ The limit is: $$-13$$
+
+### Derivative
+
+The derivative is: $$x^{2} e^{x} + 2 x e^{x}$$ The derivative is: $$2 x e^{x^{2}} + 2 e^{2 x}$$ The derivative is: $$- \frac{2 x^{2}}{\left(x^{2} + 1\right)^{2}} + \frac{1}{x^{2} + 1}$$ The derivative is: $$2 x e^{x^{2}} + 2 e^{2 x}$$ The derivative is: $$4 x^{3}$$
+
+The derivative is: $$\frac{2 x}{x^{2} + 1} + \frac{1}{x + 1}$$ The derivative is: $$2 x e^{x^{2}} + 2 e^{2 x}$$ The derivative is: $$- \frac{2 x^{4}}{\left(x^{2} + 1\right)^{2}} + \frac{3 x^{2}}{x^{2} + 1}$$ The derivative is: $$e^{x}$$ The derivative is: $$\frac{2 x}{x^{2} + 1} + \frac{1}{x + 1}$$
+
+### Integral
+
+The improper integral converges to: $$\infty$$ The indefinite integral is: $$\operatorname{Si}{\left(x \right)}$$
+Definite integral from 1 to 5: $$- \operatorname{Si}{\left(1 \right)} + \operatorname{Si}{\left(5 \right)}$$ The indefinite integral is: $$\frac{\log{\left(x - 2 \right)}}{3} - \frac{\log{\left(x + 1 \right)}}{3}$$
+Definite integral from 3 to 4: $$- \frac{\log{\left(5 \right)}}{3} + \frac{\log{\left(2 \right)}}{3} + \frac{\log{\left(4 \right)}}{3}$$ The indefinite integral is: $$\operatorname{asin}{\left(x \right)}$$
+Definite integral from 1 to 5: $$- \frac{\pi}{2} + \operatorname{asin}{\left(5 \right)}$$ The indefinite integral is: $$2 \log{\left(x - 2 \right)} + \log{\left(x + 2 \right)}$$
+Definite integral from 4 to 5: $$- \log{\left(6 \right)} - 2 \log{\left(2 \right)} + \log{\left(7 \right)} + 2 \log{\left(3 \right)}$$
+
+The improper integral converges to: $$1$$ The indefinite integral is: $$\frac{e^{x} \sin{\left(x \right)}}{2} - \frac{e^{x} \cos{\left(x \right)}}{2}$$
+Definite integral from 4 to 4: $$0$$ The indefinite integral is: $$\frac{e^{x} \sin{\left(x \right)}}{2} - \frac{e^{x} \cos{\left(x \right)}}{2}$$
+Definite integral from 1 to 5: $$\frac{e^{5} \sin{\left(5 \right)}}{2} - \frac{e^{5} \cos{\left(5 \right)}}{2} - \frac{e \sin{\left(1 \right)}}{2} + \frac{e \cos{\left(1 \right)}}{2}$$ The improper integral converges to: $$1$$ The indefinite integral is: $$\log{\left(\log{\left(x \right)} \right)}$$
+Definite integral from 2 to 3: $$\log{\left(\log{\left(3 \right)} \right)} - \log{\left(\log{\left(2 \right)} \right)}$$
+
+### Partial Derivative
+
+$$\frac{\partial f}{\partial x} = 3 x^{2} y^{2} - 6 x y + 2 y^{3}$$
+$$\frac{\partial f}{\partial y} = 2 x^{3} y - 3 x^{2} + 6 x y^{2}$$ $$\frac{\partial f}{\partial x} = \frac{3 x^{2}}{x^{3} + y^{3}} - \frac{1}{x}$$
+$$\frac{\partial f}{\partial y} = \frac{3 y^{2}}{x^{3} + y^{3}} - \frac{1}{y}$$ $$\frac{\partial y}{\partial x} = \frac{- 2 x y - y^{2} + y}{x^{2} + 2 x y - x}$$ $$\frac{\partial f}{\partial x} = \frac{3 x^{2}}{x^{3} + y^{3}} - \frac{1}{x}$$
+$$\frac{\partial f}{\partial y} = \frac{3 y^{2}}{x^{3} + y^{3}} - \frac{1}{y}$$ $$\frac{\partial y}{\partial x} = \frac{- 2 x y - y^{2} + y}{x^{2} + 2 x y - x}$$
+
+$$\frac{\partial f}{\partial x} = \frac{3 x^{2}}{x^{3} + y^{3}} - \frac{1}{x}$$
+$$\frac{\partial f}{\partial y} = \frac{3 y^{2}}{x^{3} + y^{3}} - \frac{1}{y}$$ $$\frac{\partial^2 f}{\partial x \partial y} = 2 y \left(3 x^{2} + 2 y^{2}\right)$$ $$\frac{\partial f}{\partial x} = 3 x^{2} y^{2} - 6 x y + 2 y^{3}$$
+$$\frac{\partial f}{\partial y} = 2 x^{3} y - 3 x^{2} + 6 x y^{2}$$ $$\frac{\partial f}{\partial x} = 3 x^{2} y^{2} - 6 x y + 2 y^{3}$$
+$$\frac{\partial f}{\partial y} = 2 x^{3} y - 3 x^{2} + 6 x y^{2}$$ $$\frac{\partial f}{\partial x} = \frac{3 x^{2}}{x^{3} + y^{3}} - \frac{1}{x}$$
+$$\frac{\partial f}{\partial y} = \frac{3 y^{2}}{x^{3} + y^{3}} - \frac{1}{y}$$
+
